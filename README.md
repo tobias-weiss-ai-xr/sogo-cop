@@ -1,8 +1,16 @@
-# SOGo Community of Practice
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="resources/logo.png">
+    <img src="resources/logo.png" width="500" alt="SOGo Community of Practice">
+  </picture>
+</p>
 
-**Open-source groupware for calendars, contacts, and email**
+<p align="center">
+  <a href="https://sogo.nu"><strong>sogo.nu</strong></a> ·
+  <strong>Open-source groupware</strong> — calendars, contacts, and email
+</p>
 
-[sogo.nu](https://sogo.nu)
+---
 
 SOGo is an open-source groupware server that provides CalDAV, CardDAV, and ActiveSync-compatible access to calendars, address books, and email. It integrates natively with Thunderbird (via the SOGo Connector plugin) and Microsoft Outlook, making it a practical choice for academic institutions and non-profits that need shared calendars and email without proprietary lock-in.
 

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Calendar icon -->
+  <rect x="12" y="18" width="44" height="44" rx="6" fill="#2563eb" opacity="0.15"/>
+  <rect x="12" y="18" width="44" height="44" rx="6" fill="none" stroke="url(#grad)" stroke-width="2.5"/>
+  <line x1="12" y1="34" x2="56" y2="34" stroke="url(#grad)" stroke-width="2.5"/>
+  <line x1="26" y1="12" x2="26" y2="22" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <line x1="42" y1="12" x2="42" y2="22" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <text x="34" y="52" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="600" fill="#2563eb">17</text>
+
+  <!-- Contact icon -->
+  <circle cx="98" cy="26" r="7" fill="#7c3aed" opacity="0.3"/>
+  <path d="M82 56c0-8 7-14 16-14s16 6 16 14" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Mail icon -->
+  <rect x="130" y="18" width="44" height="36" rx="4" fill="#2563eb" opacity="0.15"/>
+  <rect x="130" y="18" width="44" height="36" rx="4" fill="none" stroke="url(#grad)" stroke-width="2.5"/>
+  <polyline points="130,24 152,40 174,24" fill="none" stroke="url(#grad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- SOGo text -->
+  <text x="200" y="52" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="32" font-weight="700" fill="url(#grad)" letter-spacing="1">SOGo</text>
+
+  <!-- Tagline -->
+  <text x="200" y="76" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="13" fill="#6b7280" letter-spacing="0.5">Community of Practice</text>
+
+  <!-- Subtitle -->
+  <text x="200" y="94" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="11" fill="#9ca3af" letter-spacing="0.5">Calendars · Contacts · Email</text>
+</svg>
