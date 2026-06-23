@@ -1,0 +1,31 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - img "SOGo" [ref=e5]
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - generic [ref=e40]: Email
+        - paragraph [ref=e41]: sogo-tests1@example.org
+      - generic [ref=e42]:
+        - generic [ref=e43]: Password
+        - generic [ref=e44]:
+          - textbox "Password" [active] [ref=e45]:
+            - /placeholder: Enter your password
+            - text: sogo
+          - button [ref=e46] [cursor=pointer]:
+            - img
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - checkbox "Remember me" [ref=e49] [cursor=pointer]
+          - checkbox
+        - generic [ref=e50] [cursor=pointer]: Remember me
+      - button "Log in" [ref=e52] [cursor=pointer]
+    - generic [ref=e13]:
+      - button "Dark" [ref=e14] [cursor=pointer]:
+        - img
+      - button "Light" [ref=e15] [cursor=pointer]:
+        - img
+      - button "Auto" [ref=e16] [cursor=pointer]:
+        - img
+      - button [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+  - alert [ref=e20]

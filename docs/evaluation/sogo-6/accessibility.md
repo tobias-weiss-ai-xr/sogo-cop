@@ -3,7 +3,9 @@
 **Target:** [demov6.sogo.nu](https://demov6.sogo.nu/SOGo/)  
 **Standard:** WCAG 2.2 Level AA  
 **Stack:** React.js / Next.js (frontend) — Python Flask REST API (backend)  
-**Status:** Pre-beta preview — UI is subject to change.
+**Status:** Pre-beta preview — UI is subject to change.  
+**Last tested:** 2026-06-23  
+**Testing method:** Playwright accessibility snapshots + axe-core v4.10 automated scans
 
 > "Keep in mind that the UI can still change and that the demo does not show the current state of our development progress."
 > — SOGo Team, May 2026
@@ -249,6 +251,139 @@ Each finding should follow this structure:
 - **Recommendation:** [How to fix]
 - **Screenshot:** [link to annotated screenshot]
 ```
+
+---
+
+## Initial Automated Findings (axe-core, 2026-06-23)
+
+Automated scans were run on three key pages using axe-core v4.10.2 via Playwright. These represent a baseline — manual testing will find additional issues.
+
+### Summary Table
+
+| Page | Violations | Passes | Incomplete |
+|---|---|---|---|
+| **Login** (`/en/auth/login`) | 6 | 40+ | 2 |
+| **Inbox** (`/en/u/0/INBOX`) | 13 | 40+ | 2 |
+| **Contacts** (`/en/address_books/work`) | 9 | 40+ | 2 |
+
+### Cross-Page Issues (found on ALL pages)
+
+| ID | WCAG | Impact | Description | Prevalence |
+|---|---|---|---|---|
+| `html-has-lang` | 3.1.1 Language of Page | **Serious** | `<html>` element missing `lang` attribute | All pages |
+| `page-has-heading-one` | Best practice | **Moderate** | No `<h1>` heading found | All pages |
+| `color-contrast` | 1.4.3 Contrast (AA) | **Serious** | Multiple elements fail 4.5:1 ratio | All pages |
+| `button-name` | 4.1.2 Name, Role, Value | **Critical** | Icon-only buttons without accessible names | All pages |
+| `region` | Best practice | **Moderate** | Content not contained by landmarks | All pages |
+
+### Login Page Findings
+
+| ID | Impact | Nodes | Details |
+|---|---|---|---|
+| `button-name` | Critical | 1 | Unnamed button (likely the theme toggle overflow button) |
+| `color-contrast` | Serious | 4 | Text/background insufficient contrast |
+| `html-has-lang` | Serious | 1 | `<html>` missing `lang` attribute |
+| `landmark-one-main` | Moderate | 1 | No `<main>` landmark |
+| `page-has-heading-one` | Moderate | 1 | No `<h1>` |
+| `region` | Moderate | 4 | Content outside landmarks |
+
+### Inbox Page Findings
+
+| ID | Impact | Nodes | Details |
+|---|---|---|---|
+| `aria-allowed-attr` | Critical | 3 | Unsupported ARIA attributes on elements (e.g., `aria-expanded` on non-interactive div) |
+| `aria-valid-attr-value` | Critical | 1 | Invalid `aria-controls` reference (Radix UI dynamic ID mismatch) |
+| `button-name` | Critical | 13 | Icon-only sidebar action buttons (context menus, collapse) without labels |
+| `color-contrast` | Serious | 11 | Sidebar text, email preview text below 4.5:1 |
+| `html-has-lang` | Serious | 1 | Missing `lang` |
+| `list` | Serious | 2 | `<ul>` has non-`<li>` direct children (Radix UI sidebar) |
+| `listitem` | Serious | 1 | `<li>` outside `<ul>`/`<ol>` parent |
+| `nested-interactive` | Serious | 1 | Interactive control nested inside another (email action buttons) |
+| `landmark-main-is-top-level` | Moderate | 1 | `<main>` nested inside another landmark |
+| `landmark-no-duplicate-main` | Moderate | 1 | More than one `<main>` landmark |
+| `landmark-unique` | Moderate | 1 | Landmarks lack unique labels |
+| `page-has-heading-one` | Moderate | 1 | No `<h1>` |
+| `region` | Moderate | 2 | Content outside landmarks |
+
+### Contacts Page Findings
+
+| ID | Impact | Nodes | Details |
+|---|---|---|---|
+| `aria-allowed-attr` | Critical | 1 | `aria-expanded="false"` on a non-interactive dropdown trigger |
+| `aria-valid-attr-value` | Critical | 1 | Invalid `aria-controls` reference (Radix UI) |
+| `button-name` | Critical | 3 | Unnamed sidebar action buttons |
+| `color-contrast` | Serious | 9 | **Notable**: Sidebar group labels at **3.06:1** (requires 4.5:1). Button text on teal background `#4d8080` with white text at **4.45:1** — borderline fail for normal text |
+| `html-has-lang` | Serious | 1 | Missing `lang` |
+| `list` | Serious | 1 | `<ul>` with non-`<li>` children |
+| `listitem` | Serious | 2 | `<li>` outside `<ul>`/`<ol>` |
+| `page-has-heading-one` | Moderate | 1 | No `<h1>` |
+| `region` | Moderate | 5 | Sidebar group labels outside landmarks |
+
+### Console Errors Detected
+
+```
+1. [ERROR] Refused to execute script from '/_next/static/css/0127c82b1dfaee58.css'
+           → MIME type 'text/css' is not executable (strict MIME checking)
+           → Login page (persists across all pages)
+2. [ERROR] 404 — /en/api/sse  (×4 occurrences)
+           → Server-Sent Events endpoint not found
+           → Occurs after login (likely SSE for real-time notifications)
+3. [ERROR] 404 — /images/account-avatar.svg  (×3 occurrences)
+           → Missing avatar image resource
+           → All pages after login
+```
+
+**« html lang » missing (Critical)** — `<html class="__variable_fb8f2c ... light" style="color-scheme: light;">` has no `lang` attribute. Screen readers will not auto-detect page language.
+
+---
+
+## Accessibility Snapshot Observations (Playwright Accessibility Tree)
+
+The following observations draw from the rendered accessibility tree, not axe automation alone.
+
+### Login Page (`/en/auth/login`)
+- **Good**: Email textbox has visible `<label>` and placeholder; Language combobox has accessible name; SOGo logo has `alt="SOGo"`.
+- **Good**: Theme buttons "Dark", "Light", "Auto" have discernible names.
+- **Observation**: No `<h1>` heading — the page title exists as a meta title but not as an ARIA heading. Logo is an `<img>` without a heading role.
+- **Observation**: The email field is pre-filled with `sogo-tests1@example.org` — convenient for demo, but real deployments should not persist credentials.
+
+### Password Step (`login/pwd`)
+- **Good**: "Password" textbox has visible label and placeholder "Enter your password". Password is pre-filled with `sogo` for demo.
+- **Good**: "Remember me" checkbox has associated label.
+- **Good**: "Log in" button visible.
+- **Observation**: "Email" is shown as plain text `sogo-tests1@example.org` instead of as a form field — no ability to change email without going back.
+
+### Inbox (`/en/u/0/INBOX`)
+- **Good**: Tabs (Mail, Address Books, Calendars, Tasks) are proper `tablist`/`tab` roles.
+- **Good**: Filter radios (All, Read, Unread, Starred, Attachments) are in a `<group>` role.
+- **Good**: View mode radios (Full view, Split view) are in a `<group>` role.
+- **Good**: Email list items are buttons with descriptive accessible names including sender, subject, preview, and date.
+- **Good**: Pagination controls disabled/enabled correctly; page indicator shows "1 / 3".
+- **Good**: "Toggle Sidebar" has visible accessible name.
+- **Good**: Folder badges show unread count (e.g., "Inbox 5", "Drafts 2", "Junk 1").
+- **Issue**: **13 unnamed buttons** — sidebar action buttons (context menus for folders) have no accessible label. These are `data-sidebar="menu-action"` buttons with only an SVG icon.
+- **Issue**: **Nested interactive** — email row contains a button that itself contains interactive elements.
+- **Issue**: **Duplicate `<main>`** — both the sidebar region and the content area contain a `<main>` landmark. Only one should be present.
+
+### Message Detail (`/en/u/0/INBOX/inbox_001`)
+- **Good**: Subject rendered as `<h1>` heading — `"Entretien candidat — poste développeur"`.
+- **Good**: "From" (David Gueto) and "To" (John Paul) are buttons for contact actions.
+- **Good**: Action toolbar with"More actions" named button.
+- **Issue**: Several toolbar icon buttons lack accessible names (reply, forward, archive, delete, more actions — icons only).
+
+### Calendar (Week View)
+- **Good**: Day headers are proper buttons with accessible names ("21 Sun", "22 Mon", etc.).
+- **Good**: Previous/Today/Next navigation buttons, view combobox (Week), timezone combobox.
+- **Good**: Events are buttons with text labels ("Team Standup", "Doctor Appt", etc.).
+- **Good**: Calendar checkboxes for toggling visibility (Personal, Birthdays, Team Calendar, etc.).
+- **Issue**: The week view uses `rowgroup`/`row` roles with generic `<div>` elements rather than a proper `<table>` grid for the time slots.
+
+### Contacts (`/en/address_books/work`)
+- **Good**: "Search contacts…" textbox has placeholder.
+- **Good**: Address book navigation uses proper `<heading level=2>` for "Distribution lists" and "Contacts" sections.
+- **Good**: Contact rows show initials + name in descriptive buttons.
+- **Good**: "Select a contact" prompt displayed when nothing selected.
+- **Issue**: **Contrast** — sidebar group labels `#cad9d9` on `#4d8080` bg = **3.06:1** (fail). Menu item text `#ffffff` on `#4d8080` bg = **4.45:1** (borderline fail for small text).
 
 ---
 

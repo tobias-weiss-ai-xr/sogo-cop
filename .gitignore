@@ -26,3 +26,6 @@ temp/
 .project
 .classpath
 .settings/
+
+# Playwright MCP internal state
+.playwright-mcp/

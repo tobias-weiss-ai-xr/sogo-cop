@@ -1,0 +1,168 @@
+- generic [ref=e1]:
+  - alert [ref=e20]
+  - region "Notifications alt+T"
+  - generic [ref=e65]:
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - img "App Logo" [ref=e72]
+        - tablist [ref=e75]:
+          - tab "Mail" [ref=e76] [cursor=pointer]:
+            - img [ref=e77]
+          - tab "Address Books" [ref=e80] [cursor=pointer]:
+            - img [ref=e81]
+          - tab "Calendars" [active] [selected] [ref=e85] [cursor=pointer]:
+            - img [ref=e86]
+          - tab "Tasks" [ref=e89] [cursor=pointer]:
+            - img [ref=e90]
+      - generic [ref=e94]:
+        - list [ref=e737]:
+          - listitem [ref=e738]:
+            - button "Create Event Create Event" [ref=e739] [cursor=pointer]:
+              - generic [ref=e740]: Create Event
+              - generic [ref=e741]: Create Event
+        - generic [ref=e742]:
+          - generic [ref=e743]: Personal Calendars
+          - button "Add Calendar" [ref=e744]:
+            - img [ref=e745]
+          - list [ref=e747]:
+            - listitem [ref=e748]:
+              - generic [ref=e749] [cursor=pointer]:
+                - checkbox [checked] [ref=e751]:
+                  - generic:
+                    - img
+                - generic [ref=e753]: Personal
+              - button [ref=e754] [cursor=pointer]:
+                - img [ref=e755]
+            - listitem [ref=e759]:
+              - generic [ref=e760] [cursor=pointer]:
+                - checkbox [checked] [ref=e762]:
+                  - generic:
+                    - img
+                - generic [ref=e764]: Birthdays
+              - button [ref=e765] [cursor=pointer]:
+                - img [ref=e766]
+            - listitem [ref=e770]:
+              - generic [ref=e771] [cursor=pointer]:
+                - checkbox [checked] [ref=e773]:
+                  - generic:
+                    - img
+                - generic [ref=e775]: Team Calendar
+              - button [ref=e776] [cursor=pointer]:
+                - img [ref=e777]
+            - listitem [ref=e781]:
+              - generic [ref=e782] [cursor=pointer]:
+                - checkbox [checked] [ref=e784]:
+                  - generic:
+                    - img
+                - generic [ref=e786]: Company Meetings
+              - button [ref=e787] [cursor=pointer]:
+                - img [ref=e788]
+            - listitem [ref=e792]:
+              - generic [ref=e793] [cursor=pointer]:
+                - checkbox [checked] [ref=e795]:
+                  - generic:
+                    - img
+                - generic [ref=e797]: Weather Calendar
+              - button [ref=e798] [cursor=pointer]:
+                - img [ref=e799]
+        - generic [ref=e803]:
+          - generic [ref=e804]: Shared Calendars
+          - list
+        - generic [ref=e805]:
+          - generic [ref=e806]: Subscriptions
+          - button "Subscribe to calendar" [ref=e807]:
+            - img [ref=e808]
+          - list
+      - button "Toggle Sidebar" [ref=e201] [cursor=pointer]:
+        - img
+        - generic [ref=e202]: Toggle Sidebar
+    - main [ref=e203]:
+      - generic [ref=e204]:
+        - generic [ref=e809]:
+          - textbox "Search events..." [ref=e810]
+          - generic:
+            - img
+            - text: Search events...
+        - generic [ref=e210]:
+          - generic [ref=e212]: JP
+          - generic [ref=e213]:
+            - generic [ref=e214]: John Paul
+            - generic [ref=e215]: sogo-tests1@example.org
+      - main [ref=e812]:
+        - generic [ref=e814]:
+          - generic [ref=e815]:
+            - generic [ref=e816]:
+              - button "Previous" [ref=e817] [cursor=pointer]:
+                - img
+              - button "Today" [ref=e818] [cursor=pointer]
+              - button "Next" [ref=e819] [cursor=pointer]:
+                - img
+            - generic [ref=e820]: June 2026
+          - generic [ref=e821]:
+            - combobox [ref=e822] [cursor=pointer]:
+              - generic [ref=e824]: Week
+              - img [ref=e825]
+            - combobox [ref=e827] [cursor=pointer]:
+              - generic [ref=e829]: GMT+02:00 Europe/Berlin
+              - img [ref=e830]
+        - generic [ref=e837]:
+          - generic [ref=e840]:
+            - generic [ref=e841]:
+              - generic:
+                - button "21 Sun":
+                  - generic: 21 Sun
+              - generic:
+                - button "22 Mon":
+                  - generic: 22 Mon
+              - generic:
+                - button "23 Tue":
+                  - generic: 23 Tue
+              - generic:
+                - button "24 Wed":
+                  - generic: 24 Wed
+              - generic:
+                - button "25 Thu":
+                  - generic: 25 Thu
+              - generic:
+                - button "26 Fri":
+                  - generic: 26 Fri
+              - generic:
+                - button "27 Sat":
+                  - generic: 27 Sat
+            - rowgroup [ref=e842]:
+              - row [ref=e851]
+          - generic [ref=e855]:
+            - generic [ref=e856]:
+              - generic [ref=e858]: 12 AM
+              - generic [ref=e861]: 1 AM
+              - generic [ref=e864]: 2 AM
+              - generic [ref=e867]: 3 AM
+              - generic [ref=e870]: 4 AM
+              - generic [ref=e873]: 5 AM
+              - generic [ref=e876]: 6 AM
+              - generic [ref=e879]: 7 AM
+              - generic [ref=e882]: 8 AM
+              - generic [ref=e885]: 9 AM
+              - generic [ref=e888]: 10 AM
+              - generic [ref=e891]: 11 AM
+              - generic [ref=e894]: 12 PM
+              - generic [ref=e897]: 1 PM
+              - generic [ref=e900]: 2 PM
+              - generic [ref=e903]: 3 PM
+              - generic [ref=e906]: 4 PM
+              - generic [ref=e909]: 5 PM
+              - generic [ref=e912]: 6 PM
+              - generic [ref=e915]: 7 PM
+              - generic [ref=e918]: 8 PM
+              - generic [ref=e921]: 9 PM
+              - generic [ref=e924]: 10 PM
+              - generic [ref=e927]: 11 PM
+            - button "Team Standup" [ref=e1151] [cursor=pointer]:
+              - generic [ref=e1153]: Team Standup
+            - button "Doctor Appointment" [ref=e1228] [cursor=pointer]:
+              - generic [ref=e1230]: Doctor Appointment
+            - button "Project Review" [ref=e1305] [cursor=pointer]:
+              - generic [ref=e1307]: Project Review
+            - button "Client Meeting" [ref=e1382] [cursor=pointer]:
+              - generic [ref=e1384]: Client Meeting
+    - status [ref=e583]

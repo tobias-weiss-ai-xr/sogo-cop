@@ -1,0 +1,185 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e20]
+  - region "Notifications alt+T"
+  - generic [ref=e65]:
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - img "App Logo" [ref=e72]
+        - tablist [ref=e75]:
+          - tab "Mail" [selected] [ref=e76] [cursor=pointer]:
+            - img [ref=e77]
+          - tab "Address Books" [ref=e80] [cursor=pointer]:
+            - img [ref=e81]
+          - tab "Calendars" [ref=e85] [cursor=pointer]:
+            - img [ref=e86]
+          - tab "Tasks" [ref=e89] [cursor=pointer]:
+            - img [ref=e90]
+      - generic [ref=e94]:
+        - list [ref=e585]:
+          - list [ref=e586]:
+            - listitem [ref=e587]:
+              - button "sogo-tests1@example.org" [ref=e588] [cursor=pointer]:
+                - img [ref=e590]
+                - generic [ref=e594]: sogo-tests1@example.org
+                - img [ref=e595]
+        - list [ref=e600]:
+          - listitem [ref=e601]:
+            - button "New message New message" [ref=e602] [cursor=pointer]:
+              - generic [ref=e603]: New message
+              - generic [ref=e604]: New message
+        - list [ref=e606]:
+          - listitem [ref=e608]:
+            - button "Inbox 5" [ref=e609] [cursor=pointer]:
+              - img [ref=e611]
+              - generic [ref=e614]:
+                - generic [ref=e615]: Inbox
+                - img [ref=e616]
+                - generic [ref=e618]: "5"
+            - button [ref=e619] [cursor=pointer]:
+              - img [ref=e620]
+          - listitem [ref=e624]:
+            - button "Sent" [ref=e625] [cursor=pointer]:
+              - img [ref=e627]
+              - generic [ref=e631]: Sent
+            - button [ref=e632] [cursor=pointer]:
+              - img [ref=e633]
+          - listitem [ref=e637]:
+            - button "Drafts 2" [ref=e638] [cursor=pointer]:
+              - img [ref=e640]
+              - generic [ref=e643]:
+                - generic [ref=e644]: Drafts
+                - generic [ref=e645]: "2"
+            - button [ref=e646] [cursor=pointer]:
+              - img [ref=e647]
+          - listitem [ref=e651]:
+            - button "Trash" [ref=e652] [cursor=pointer]:
+              - img [ref=e654]
+              - generic [ref=e658]: Trash
+            - button [ref=e659] [cursor=pointer]:
+              - img [ref=e660]
+          - listitem [ref=e664]:
+            - button "Junk 1" [ref=e665] [cursor=pointer]:
+              - img [ref=e667]
+              - generic [ref=e669]:
+                - generic [ref=e670]: Junk
+                - generic [ref=e671]: "1"
+            - button [ref=e672] [cursor=pointer]:
+              - img [ref=e673]
+          - listitem [ref=e677]:
+            - button "test" [ref=e678] [cursor=pointer]:
+              - img [ref=e680]
+              - generic [ref=e683]: test
+            - button [ref=e684] [cursor=pointer]:
+              - img [ref=e685]
+      - button "Toggle Sidebar" [ref=e201] [cursor=pointer]:
+        - img
+        - generic [ref=e202]: Toggle Sidebar
+    - main [ref=e203]:
+      - generic [ref=e204]:
+        - generic [ref=e207]:
+          - textbox "Search emails" [ref=e208]
+          - generic:
+            - img
+            - text: Search emails
+        - generic [ref=e210]:
+          - generic [ref=e212]: JP
+          - generic [ref=e213]:
+            - generic [ref=e214]: John Paul
+            - generic [ref=e215]: sogo-tests1@example.org
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - main [ref=e219]:
+            - generic [ref=e221]:
+              - generic [ref=e222]:
+                - checkbox [ref=e223] [cursor=pointer]
+                - generic [ref=e224]: Inbox
+                - generic [ref=e225]: 45 messages
+              - generic [ref=e226]:
+                - generic [ref=e228]:
+                  - group [ref=e230]:
+                    - radio "All" [checked] [ref=e231] [cursor=pointer]
+                    - radio "Read" [ref=e232] [cursor=pointer]
+                    - radio "Unread" [ref=e233] [cursor=pointer]
+                    - radio "Starred" [ref=e234] [cursor=pointer]
+                    - radio "Attachments" [ref=e235] [cursor=pointer]
+                  - group [ref=e236]:
+                    - radio "Full view" [checked] [ref=e237] [cursor=pointer]:
+                      - img
+                    - radio "Split view" [ref=e238] [cursor=pointer]:
+                      - img
+                - button [ref=e239] [cursor=pointer]:
+                  - img
+                - generic [ref=e240]:
+                  - button "Previous page" [disabled]:
+                    - img
+                  - button "1 / 3" [ref=e241] [cursor=pointer]
+                  - button "Next page" [ref=e242] [cursor=pointer]:
+                    - img
+            - generic [ref=e690]:
+              - generic [ref=e691]:
+                - button [ref=e692] [cursor=pointer]:
+                  - img
+                - generic [ref=e693]:
+                  - generic [ref=e694]:
+                    - button [ref=e695] [cursor=pointer]:
+                      - img
+                    - button [ref=e697] [cursor=pointer]:
+                      - img
+                    - button [disabled]:
+                      - img
+                    - button [ref=e700] [cursor=pointer]:
+                      - img
+                  - button "More actions" [ref=e702] [cursor=pointer]:
+                    - img
+                - generic [ref=e704]:
+                  - button [disabled]:
+                    - img
+                  - button [ref=e706] [cursor=pointer]:
+                    - img
+              - heading "Entretien candidat — poste développeur" [level=1] [ref=e707]
+              - generic [ref=e708]:
+                - generic [ref=e709]:
+                  - generic [ref=e712]: D
+                  - generic [ref=e713]:
+                    - generic [ref=e714]:
+                      - generic [ref=e715]: From
+                      - button "David Gueto" [ref=e716] [cursor=pointer]
+                    - generic [ref=e717]:
+                      - generic [ref=e718]: To
+                      - button "John Paul" [ref=e719] [cursor=pointer]
+                  - generic [ref=e720]:
+                    - generic [ref=e721]: 20 avril à 11:15
+                    - generic [ref=e722]:
+                      - button [ref=e723] [cursor=pointer]:
+                        - img
+                      - button [ref=e725] [cursor=pointer]:
+                        - img
+                      - button [ref=e727] [cursor=pointer]:
+                        - img
+                - generic [ref=e732]:
+                  - paragraph [ref=e733]: Bonjour,
+                  - paragraph [ref=e734]: Le créneau que vous proposez pour l’entretien (mardi 10 h) me convient parfaitement.
+                  - paragraph [ref=e735]:
+                    - text: Cordialement,
+                    - text: David Gueto
+          - button "Toggle Sidebar" [ref=e552] [cursor=pointer]:
+            - img
+            - generic [ref=e553]: Toggle Sidebar
+        - list [ref=e561]:
+          - listitem [ref=e562]:
+            - button "Address Book" [ref=e563] [cursor=pointer]:
+              - img [ref=e564]
+              - generic: Address Book
+          - listitem [ref=e568]:
+            - button "Calendar" [ref=e569] [cursor=pointer]:
+              - img [ref=e570]
+              - generic: Calendar
+          - listitem [ref=e573]:
+            - button "Tasks" [ref=e574] [cursor=pointer]:
+              - img [ref=e575]
+              - generic: Tasks
+          - listitem [ref=e579]:
+            - button "Notes" [ref=e580] [cursor=pointer]:
+              - img [ref=e581]
+              - generic: Notes
+    - status [ref=e583]

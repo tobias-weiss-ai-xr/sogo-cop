@@ -1,0 +1,130 @@
+- generic [ref=e1]:
+  - alert [ref=e20]
+  - region "Notifications alt+T"
+  - generic [ref=e65]:
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - img "App Logo" [ref=e72]
+        - tablist [ref=e75]:
+          - tab "Mail" [ref=e76] [cursor=pointer]:
+            - img [ref=e77]
+          - tab "Address Books" [active] [selected] [ref=e80] [cursor=pointer]:
+            - img [ref=e81]
+          - tab "Calendars" [ref=e85] [cursor=pointer]:
+            - img [ref=e86]
+          - tab "Tasks" [ref=e89] [cursor=pointer]:
+            - img [ref=e90]
+      - generic [ref=e94]:
+        - list [ref=e1460]:
+          - listitem [ref=e1461]:
+            - button "New contact New contact" [ref=e1462] [cursor=pointer]:
+              - generic [ref=e1463]: New contact
+              - generic [ref=e1464]: New contact
+        - generic [ref=e1465]:
+          - generic [ref=e1466]: Address books
+          - button "Add address book" [ref=e1467] [cursor=pointer]:
+            - img [ref=e1468]
+            - generic [ref=e1469]: Add address book
+          - list [ref=e1471]:
+            - listitem [ref=e1473]:
+              - button "Work" [ref=e1474] [cursor=pointer]:
+                - img [ref=e1475]
+                - generic [ref=e1479]: Work
+              - button [ref=e1480] [cursor=pointer]:
+                - img [ref=e1481]
+            - listitem [ref=e1486]:
+              - button "Personal" [ref=e1487] [cursor=pointer]:
+                - img [ref=e1488]
+                - generic [ref=e1492]: Personal
+              - button [ref=e1493] [cursor=pointer]:
+                - img [ref=e1494]
+        - generic [ref=e1498]:
+          - generic [ref=e1499]: Subscriptions
+          - button "Add subscriptions" [ref=e1500] [cursor=pointer]:
+            - img [ref=e1501]
+            - generic [ref=e1502]: Add subscriptions
+          - list [ref=e1503]:
+            - listitem [ref=e1504]:
+              - button "Contacts" [ref=e1505] [cursor=pointer]:
+                - img [ref=e1506]
+                - generic [ref=e1510]: Contacts
+              - button [ref=e1511] [cursor=pointer]:
+                - img [ref=e1512]
+        - generic [ref=e1516]:
+          - generic [ref=e1517]: Global address books
+          - list [ref=e1518]:
+            - listitem [ref=e1519]:
+              - button "Global" [ref=e1520] [cursor=pointer]:
+                - img [ref=e1521]
+                - generic [ref=e1524]: Global
+            - listitem [ref=e1525]:
+              - button "Customers" [ref=e1526] [cursor=pointer]:
+                - img [ref=e1527]
+                - generic [ref=e1530]: Customers
+      - button "Toggle Sidebar" [ref=e201] [cursor=pointer]:
+        - img
+        - generic [ref=e202]: Toggle Sidebar
+    - main [ref=e203]:
+      - generic [ref=e204]:
+        - generic [ref=e1531]:
+          - textbox "Search contacts…" [ref=e1532]
+          - generic:
+            - img
+            - text: Search contacts…
+        - generic [ref=e210]:
+          - generic [ref=e212]: JP
+          - generic [ref=e213]:
+            - generic [ref=e214]: John Paul
+            - generic [ref=e215]: sogo-tests1@example.org
+      - generic [ref=e1534]:
+        - generic [ref=e1537]:
+          - generic [ref=e1538]:
+            - generic [ref=e1540]: 1 list · 4 contacts
+            - button "Name" [ref=e1541] [cursor=pointer]:
+              - img
+              - generic [ref=e1542]: Name
+              - img
+          - generic [ref=e1543]:
+            - generic [ref=e1544]:
+              - generic [ref=e1545]:
+                - img [ref=e1546]
+                - heading "Distribution lists" [level=2] [ref=e1551]
+                - generic [ref=e1552]: 1 list
+              - list [ref=e1553]:
+                - listitem [ref=e1554]:
+                  - button "Sales Team 2 members" [ref=e1555]:
+                    - generic [ref=e1556] [cursor=pointer]:
+                      - img [ref=e1559]
+                      - generic [ref=e1564]:
+                        - generic [ref=e1565]: Sales Team
+                        - generic [ref=e1566]: 2 members
+            - generic [ref=e1567]:
+              - generic [ref=e1568]:
+                - heading "Contacts" [level=2] [ref=e1569]
+                - generic [ref=e1570]: 4 contacts
+              - list [ref=e1571]:
+                - listitem [ref=e1572]:
+                  - button "JD John Doe" [ref=e1573]:
+                    - generic [ref=e1574] [cursor=pointer]:
+                      - generic [ref=e1576]: JD
+                      - generic [ref=e1578]: John Doe
+                - listitem [ref=e1579]:
+                  - button "JS Jane Smith" [ref=e1580]:
+                    - generic [ref=e1581] [cursor=pointer]:
+                      - generic [ref=e1583]: JS
+                      - generic [ref=e1585]: Jane Smith
+                - listitem [ref=e1586]:
+                  - button "TT test test" [ref=e1587]:
+                    - generic [ref=e1588] [cursor=pointer]:
+                      - generic [ref=e1590]: TT
+                      - generic [ref=e1592]: test test
+                - listitem [ref=e1593]:
+                  - button "BT Brian Topgoush" [ref=e1594]:
+                    - generic [ref=e1595] [cursor=pointer]:
+                      - generic [ref=e1597]: BT
+                      - generic [ref=e1599]: Brian Topgoush
+        - generic [ref=e1601]:
+          - img [ref=e1602]
+          - paragraph [ref=e1605]: Select a contact
+          - paragraph [ref=e1606]: Choose a contact or distribution list from the list to view details.
+    - status [ref=e583]

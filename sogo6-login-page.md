@@ -1,0 +1,28 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - img "SOGo" [ref=e5]
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]: Email
+        - textbox "Email" [ref=e24]:
+          - /placeholder: Enter your email
+          - text: sogo-tests1@example.org
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - img [ref=e27]
+          - text: Language
+        - combobox "Language" [ref=e31] [cursor=pointer]:
+          - generic [ref=e33]: English
+          - img [ref=e34]
+        - combobox [ref=e36]
+      - button "Next" [ref=e37] [cursor=pointer]
+    - generic [ref=e13]:
+      - button "Dark" [ref=e14] [cursor=pointer]:
+        - img
+      - button "Light" [ref=e15] [cursor=pointer]:
+        - img
+      - button "Auto" [ref=e16] [cursor=pointer]:
+        - img
+      - button [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+  - alert [ref=e20]

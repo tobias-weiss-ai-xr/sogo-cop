@@ -1,0 +1,357 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e20]
+  - region "Notifications alt+T"
+  - generic [ref=e65]:
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - img "App Logo" [ref=e72]
+        - tablist [ref=e75]:
+          - tab "Mail" [selected] [ref=e76] [cursor=pointer]:
+            - img [ref=e77]
+          - tab "Address Books" [ref=e80] [cursor=pointer]:
+            - img [ref=e81]
+          - tab "Calendars" [ref=e85] [cursor=pointer]:
+            - img [ref=e86]
+          - tab "Tasks" [ref=e89] [cursor=pointer]:
+            - img [ref=e90]
+      - generic [ref=e94]:
+        - list [ref=e96]:
+          - list [ref=e97]:
+            - listitem [ref=e98]:
+              - button "sogo-tests1@example.org" [ref=e99] [cursor=pointer]:
+                - img [ref=e101]
+                - generic [ref=e105]: sogo-tests1@example.org
+                - img [ref=e106]
+        - list [ref=e111]:
+          - listitem [ref=e112]:
+            - button "New message New message" [ref=e113] [cursor=pointer]:
+              - generic [ref=e114]: New message
+              - generic [ref=e115]: New message
+        - list [ref=e117]:
+          - listitem [ref=e119]:
+            - button "Inbox 5" [ref=e120] [cursor=pointer]:
+              - img [ref=e122]
+              - generic [ref=e125]:
+                - generic [ref=e126]: Inbox
+                - img [ref=e127]
+                - generic [ref=e129]: "5"
+            - button [ref=e130] [cursor=pointer]:
+              - img [ref=e131]
+          - listitem [ref=e135]:
+            - button "Sent" [ref=e136] [cursor=pointer]:
+              - img [ref=e138]
+              - generic [ref=e142]: Sent
+            - button [ref=e143] [cursor=pointer]:
+              - img [ref=e144]
+          - listitem [ref=e148]:
+            - button "Drafts 2" [ref=e149] [cursor=pointer]:
+              - img [ref=e151]
+              - generic [ref=e154]:
+                - generic [ref=e155]: Drafts
+                - generic [ref=e156]: "2"
+            - button [ref=e157] [cursor=pointer]:
+              - img [ref=e158]
+          - listitem [ref=e162]:
+            - button "Trash" [ref=e163] [cursor=pointer]:
+              - img [ref=e165]
+              - generic [ref=e169]: Trash
+            - button [ref=e170] [cursor=pointer]:
+              - img [ref=e171]
+          - listitem [ref=e175]:
+            - button "Junk 1" [ref=e176] [cursor=pointer]:
+              - img [ref=e178]
+              - generic [ref=e180]:
+                - generic [ref=e181]: Junk
+                - generic [ref=e182]: "1"
+            - button [ref=e183] [cursor=pointer]:
+              - img [ref=e184]
+          - listitem [ref=e188]:
+            - button "test" [ref=e189] [cursor=pointer]:
+              - img [ref=e191]
+              - generic [ref=e194]: test
+            - button [ref=e195] [cursor=pointer]:
+              - img [ref=e196]
+      - button "Toggle Sidebar" [ref=e201] [cursor=pointer]:
+        - img
+        - generic [ref=e202]: Toggle Sidebar
+    - main [ref=e203]:
+      - generic [ref=e204]:
+        - generic [ref=e207]:
+          - textbox "Search emails" [ref=e208]
+          - generic:
+            - img
+            - text: Search emails
+        - generic [ref=e210]:
+          - generic [ref=e212]: JP
+          - generic [ref=e213]:
+            - generic [ref=e214]: John Paul
+            - generic [ref=e215]: sogo-tests1@example.org
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - main [ref=e219]:
+            - generic [ref=e221]:
+              - generic [ref=e222]:
+                - checkbox [ref=e223] [cursor=pointer]
+                - generic [ref=e224]: Inbox
+                - generic [ref=e225]: 45 messages
+              - generic [ref=e226]:
+                - generic [ref=e228]:
+                  - group [ref=e230]:
+                    - radio "All" [checked] [ref=e231] [cursor=pointer]
+                    - radio "Read" [ref=e232] [cursor=pointer]
+                    - radio "Unread" [ref=e233] [cursor=pointer]
+                    - radio "Starred" [ref=e234] [cursor=pointer]
+                    - radio "Attachments" [ref=e235] [cursor=pointer]
+                  - group [ref=e236]:
+                    - radio "Full view" [checked] [ref=e237] [cursor=pointer]:
+                      - img
+                    - radio "Split view" [ref=e238] [cursor=pointer]:
+                      - img
+                - button [ref=e239] [cursor=pointer]:
+                  - img
+                - generic [ref=e240]:
+                  - button "Previous page" [disabled]:
+                    - img
+                  - button "1 / 3" [ref=e241] [cursor=pointer]
+                  - button "Next page" [ref=e242] [cursor=pointer]:
+                    - img
+            - list [ref=e245]:
+              - listitem [ref=e246]:
+                - button "D David Gueto Entretien candidat — poste développeur Bonjour, le créneau proposé pour votre entretien me convient. 20. Apr." [ref=e247]:
+                  - generic [ref=e248] [cursor=pointer]:
+                    - generic [ref=e250]: D
+                    - img [ref=e252]
+                    - generic [ref=e254]: David Gueto
+                    - generic [ref=e255]:
+                      - generic [ref=e257]: Entretien candidat — poste développeur
+                      - paragraph [ref=e258]: Bonjour, le créneau proposé pour votre entretien me convient.
+                    - generic [ref=e259]: 20. Apr.
+              - listitem [ref=e260]:
+                - button "J James Wilson Confirmation de paiement — facture INV-2026-042 Nous accusons réception de votre virement. 18. Apr." [ref=e261]:
+                  - generic [ref=e262] [cursor=pointer]:
+                    - generic [ref=e264]: J
+                    - img [ref=e266]
+                    - generic [ref=e268]: James Wilson
+                    - generic [ref=e269]:
+                      - generic [ref=e271]: Confirmation de paiement — facture INV-2026-042
+                      - paragraph [ref=e272]: Nous accusons réception de votre virement.
+                    - generic [ref=e273]:
+                      - img [ref=e274]
+                      - text: 18. Apr.
+              - listitem [ref=e276]:
+                - button "G Georges Henry Revue opérations mensuelle — ordre du jour Merci de préparer vos points pour la réunion de jeudi. 15. Apr." [ref=e277]:
+                  - generic [ref=e278] [cursor=pointer]:
+                    - generic [ref=e280]: G
+                    - img [ref=e282]
+                    - generic [ref=e284]: Georges Henry
+                    - generic [ref=e285]:
+                      - generic [ref=e287]: Revue opérations mensuelle — ordre du jour
+                      - paragraph [ref=e288]: Merci de préparer vos points pour la réunion de jeudi.
+                    - generic [ref=e289]: 15. Apr.
+              - listitem [ref=e290]:
+                - button "T Thomas Newcastle Demande d’information — offre logicielle Pourriez-vous nous transmettre une plaquette tarifaire ? 10. Apr." [ref=e291]:
+                  - generic [ref=e292] [cursor=pointer]:
+                    - generic [ref=e294]: T
+                    - img [ref=e296]
+                    - generic [ref=e298]: Thomas Newcastle
+                    - generic [ref=e299]:
+                      - generic [ref=e301]: Demande d’information — offre logicielle
+                      - paragraph [ref=e302]: Pourriez-vous nous transmettre une plaquette tarifaire ?
+                    - generic [ref=e303]: 10. Apr.
+              - listitem [ref=e304]:
+                - button "J Jane Smith Préparation FOSDEM — point d’équipe Peux-tu bloquer deux créneaux pour préparer les slides ? 8. Apr." [ref=e305]:
+                  - generic [ref=e306] [cursor=pointer]:
+                    - generic [ref=e308]: J
+                    - img [ref=e310]
+                    - generic [ref=e312]: Jane Smith
+                    - generic [ref=e313]:
+                      - generic [ref=e315]: Préparation FOSDEM — point d’équipe
+                      - paragraph [ref=e316]: Peux-tu bloquer deux créneaux pour préparer les slides ?
+                    - generic [ref=e317]: 8. Apr.
+              - listitem [ref=e318]:
+                - button "Jessica Longisland Onboarding client — appel de lancement Bienvenue à bord, voici le lien de visioconférence." [ref=e319]:
+                  - generic [ref=e320] [cursor=pointer]:
+                    - checkbox [ref=e322]
+                    - img [ref=e324]
+                    - generic [ref=e326]: Jessica Longisland
+                    - generic [ref=e327]:
+                      - generic [ref=e329]: Onboarding client — appel de lancement
+                      - paragraph [ref=e330]: Bienvenue à bord, voici le lien de visioconférence.
+                    - generic [ref=e331]:
+                      - button [ref=e332]:
+                        - img [ref=e333]
+                      - button [ref=e336]:
+                        - img [ref=e337]
+                      - button [ref=e340]:
+                        - img [ref=e341]
+                      - button [ref=e344]:
+                        - img [ref=e345]
+              - listitem [ref=e347]:
+                - button "C Claire Martin Invitation démo produit Seriez-vous disponible mardi après-midi pour une démo ? 2. Apr." [ref=e348]:
+                  - generic [ref=e349] [cursor=pointer]:
+                    - generic [ref=e351]: C
+                    - img [ref=e353]
+                    - generic [ref=e355]: Claire Martin
+                    - generic [ref=e356]:
+                      - generic [ref=e358]: Invitation démo produit
+                      - paragraph [ref=e359]: Seriez-vous disponible mardi après-midi pour une démo ?
+                    - generic [ref=e360]: 2. Apr.
+              - listitem [ref=e361]:
+                - button "C Claire Martin Suivi de notre échange Merci encore pour le temps accordé hier. 28. März" [ref=e362]:
+                  - generic [ref=e363] [cursor=pointer]:
+                    - generic [ref=e365]: C
+                    - img [ref=e367]
+                    - generic [ref=e369]: Claire Martin
+                    - generic [ref=e370]:
+                      - generic [ref=e372]: Suivi de notre échange
+                      - paragraph [ref=e373]: Merci encore pour le temps accordé hier.
+                    - generic [ref=e374]: 28. März
+              - listitem [ref=e375]:
+                - button "A Azra Anderson Webinaire « collaboration hybride » Inscription ouverte pour le 30 avril. 22. März" [ref=e376]:
+                  - generic [ref=e377] [cursor=pointer]:
+                    - generic [ref=e379]: A
+                    - img [ref=e381]
+                    - generic [ref=e383]: Azra Anderson
+                    - generic [ref=e384]:
+                      - generic [ref=e386]: Webinaire « collaboration hybride »
+                      - paragraph [ref=e387]: Inscription ouverte pour le 30 avril.
+                    - generic [ref=e388]:
+                      - img [ref=e389]
+                      - text: 22. März
+              - listitem [ref=e391]:
+                - button "D Diana Presley Candidature spontanée Veuillez trouver mon CV en pièce jointe. 15. März" [ref=e392]:
+                  - generic [ref=e393] [cursor=pointer]:
+                    - generic [ref=e395]: D
+                    - img [ref=e397]
+                    - generic [ref=e399]: Diana Presley
+                    - generic [ref=e400]:
+                      - generic [ref=e402]: Candidature spontanée
+                      - paragraph [ref=e403]: Veuillez trouver mon CV en pièce jointe.
+                    - generic [ref=e404]:
+                      - img [ref=e405]
+                      - text: 15. März
+              - listitem [ref=e407]:
+                - button "R Reporting SOGo Rapport automatique SOGo — cycle 11 Synthèse démo pagination pour le message inbox_011. 28. Nov. 2025" [ref=e408]:
+                  - generic [ref=e409] [cursor=pointer]:
+                    - generic [ref=e411]: R
+                    - img [ref=e413]
+                    - generic [ref=e415]: Reporting SOGo
+                    - generic [ref=e416]:
+                      - generic [ref=e418]: Rapport automatique SOGo — cycle 11
+                      - paragraph [ref=e419]: Synthèse démo pagination pour le message inbox_011.
+                    - generic [ref=e420]:
+                      - img [ref=e421]
+                      - text: 28. Nov. 2025
+              - listitem [ref=e423]:
+                - button "R Reporting SOGo Rapport automatique SOGo — cycle 12 Synthèse démo pagination pour le message inbox_012. 27. Nov. 2025" [ref=e424]:
+                  - generic [ref=e425] [cursor=pointer]:
+                    - generic [ref=e427]: R
+                    - img [ref=e429]
+                    - generic [ref=e431]: Reporting SOGo
+                    - generic [ref=e432]:
+                      - generic [ref=e434]: Rapport automatique SOGo — cycle 12
+                      - paragraph [ref=e435]: Synthèse démo pagination pour le message inbox_012.
+                    - generic [ref=e436]: 27. Nov. 2025
+              - listitem [ref=e437]:
+                - button "R Reporting SOGo Rapport automatique SOGo — cycle 13 Synthèse démo pagination pour le message inbox_013. 26. Nov. 2025" [ref=e438]:
+                  - generic [ref=e439] [cursor=pointer]:
+                    - generic [ref=e441]: R
+                    - img [ref=e443]
+                    - generic [ref=e445]: Reporting SOGo
+                    - generic [ref=e446]:
+                      - generic [ref=e448]: Rapport automatique SOGo — cycle 13
+                      - paragraph [ref=e449]: Synthèse démo pagination pour le message inbox_013.
+                    - generic [ref=e450]: 26. Nov. 2025
+              - listitem [ref=e451]:
+                - button "R Reporting SOGo Rapport automatique SOGo — cycle 14 Synthèse démo pagination pour le message inbox_014. 25. Nov. 2025" [ref=e452]:
+                  - generic [ref=e453] [cursor=pointer]:
+                    - generic [ref=e455]: R
+                    - img [ref=e457]
+                    - generic [ref=e459]: Reporting SOGo
+                    - generic [ref=e460]:
+                      - generic [ref=e462]: Rapport automatique SOGo — cycle 14
+                      - paragraph [ref=e463]: Synthèse démo pagination pour le message inbox_014.
+                    - generic [ref=e464]: 25. Nov. 2025
+              - listitem [ref=e465]:
+                - button "R Reporting SOGo Rapport automatique SOGo — cycle 15 Synthèse démo pagination pour le message inbox_015. 24. Nov. 2025" [ref=e466]:
+                  - generic [ref=e467] [cursor=pointer]:
+                    - generic [ref=e469]: R
+                    - img [ref=e471]
+                    - generic [ref=e473]: Reporting SOGo
+                    - generic [ref=e474]:
+                      - generic [ref=e476]: Rapport automatique SOGo — cycle 15
+                      - paragraph [ref=e477]: Synthèse démo pagination pour le message inbox_015.
+                    - generic [ref=e478]: 24. Nov. 2025
+              - listitem [ref=e479]:
+                - button "R Reporting SOGo Rapport automatique SOGo — cycle 16 Synthèse démo pagination pour le message inbox_016. 23. Nov. 2025" [ref=e480]:
+                  - generic [ref=e481] [cursor=pointer]:
+                    - generic [ref=e483]: R
+                    - img [ref=e485]
+                    - generic [ref=e487]: Reporting SOGo
+                    - generic [ref=e488]:
+                      - generic [ref=e490]: Rapport automatique SOGo — cycle 16
+                      - paragraph [ref=e491]: Synthèse démo pagination pour le message inbox_016.
+                    - generic [ref=e492]: 23. Nov. 2025
+              - listitem [ref=e493]:
+                - button "R Reporting SOGo Rapport automatique SOGo — cycle 17 Synthèse démo pagination pour le message inbox_017. 22. Nov. 2025" [ref=e494]:
+                  - generic [ref=e495] [cursor=pointer]:
+                    - generic [ref=e497]: R
+                    - img [ref=e499]
+                    - generic [ref=e501]: Reporting SOGo
+                    - generic [ref=e502]:
+                      - generic [ref=e504]: Rapport automatique SOGo — cycle 17
+                      - paragraph [ref=e505]: Synthèse démo pagination pour le message inbox_017.
+                    - generic [ref=e506]: 22. Nov. 2025
+              - listitem [ref=e507]:
+                - button "R Reporting SOGo Rapport automatique SOGo — cycle 18 Synthèse démo pagination pour le message inbox_018. 21. Nov. 2025" [ref=e508]:
+                  - generic [ref=e509] [cursor=pointer]:
+                    - generic [ref=e511]: R
+                    - img [ref=e513]
+                    - generic [ref=e515]: Reporting SOGo
+                    - generic [ref=e516]:
+                      - generic [ref=e518]: Rapport automatique SOGo — cycle 18
+                      - paragraph [ref=e519]: Synthèse démo pagination pour le message inbox_018.
+                    - generic [ref=e520]: 21. Nov. 2025
+              - listitem [ref=e521]:
+                - button "R Reporting SOGo Rapport automatique SOGo — cycle 19 Synthèse démo pagination pour le message inbox_019. 20. Nov. 2025" [ref=e522]:
+                  - generic [ref=e523] [cursor=pointer]:
+                    - generic [ref=e525]: R
+                    - img [ref=e527]
+                    - generic [ref=e529]: Reporting SOGo
+                    - generic [ref=e530]:
+                      - generic [ref=e532]: Rapport automatique SOGo — cycle 19
+                      - paragraph [ref=e533]: Synthèse démo pagination pour le message inbox_019.
+                    - generic [ref=e534]: 20. Nov. 2025
+              - listitem [ref=e535]:
+                - button "R Reporting SOGo Rapport automatique SOGo — cycle 20 Synthèse démo pagination pour le message inbox_020. 19. Nov. 2025" [ref=e536]:
+                  - generic [ref=e537] [cursor=pointer]:
+                    - generic [ref=e539]: R
+                    - img [ref=e541]
+                    - generic [ref=e543]: Reporting SOGo
+                    - generic [ref=e544]:
+                      - generic [ref=e546]: Rapport automatique SOGo — cycle 20
+                      - paragraph [ref=e547]: Synthèse démo pagination pour le message inbox_020.
+                    - generic [ref=e548]:
+                      - img [ref=e549]
+                      - text: 19. Nov. 2025
+          - button "Toggle Sidebar" [ref=e552] [cursor=pointer]:
+            - img
+            - generic [ref=e553]: Toggle Sidebar
+        - list [ref=e561]:
+          - listitem [ref=e562]:
+            - button "Address Book" [ref=e563] [cursor=pointer]:
+              - img [ref=e564]
+              - generic: Address Book
+          - listitem [ref=e568]:
+            - button "Calendar" [ref=e569] [cursor=pointer]:
+              - img [ref=e570]
+              - generic: Calendar
+          - listitem [ref=e573]:
+            - button "Tasks" [ref=e574] [cursor=pointer]:
+              - img [ref=e575]
+              - generic: Tasks
+          - listitem [ref=e579]:
+            - button "Notes" [ref=e580] [cursor=pointer]:
+              - img [ref=e581]
+              - generic: Notes
+    - status [ref=e583]
