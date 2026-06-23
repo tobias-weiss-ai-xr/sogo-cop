@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editors
+.idea/
+.vscode/
+*.sublime-*
+
+# Build
+node_modules/
+dist/
+build/
+*.log
+
+# Temp
+tmp/
+temp/
+*.bak
+
+# IDE
+*.iml
+.project
+.classpath
+.settings/
