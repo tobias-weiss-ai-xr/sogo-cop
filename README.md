@@ -25,12 +25,17 @@ This repository is the home of the SOGo Community of Practice. It contains meeti
 ```
 sogo-cop/
 ├── docs/
-│   ├── meetings/       # Quarterly CoP session notes
-│   ├── deployment/     # Deployment patterns and infrastructure guides
-│   ├── customization/  # Theming, branding, and plugin guides
-│   └── evaluation/     # Evaluation criteria and migration guides
-├── resources/          # Links, references, tooling
-└── CONTRIBUTING.md     # How to contribute
+│   ├── meetings/           # Quarterly CoP session notes
+│   ├── deployment/         # Deployment patterns and infrastructure guides
+│   ├── customization/      # Theming, branding, and plugin guides
+│   └── evaluation/         # Evaluation criteria and migration guides
+│       └── sogo-6/         # SOGo 6 evaluation (WCAG audit, feature comparison)
+│           ├── screenshots/  # Page screenshots
+│           └── snapshots/    # Playwright accessibility tree snapshots
+├── resources/                # Logo, meeting assets
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
 ```
 
 ## Next Session
