@@ -6,7 +6,7 @@ Curated links and references for SOGo operators.
 
 - [SOGo Website](https://sogo.nu)
 - [SOGo Documentation](https://wiki.sogo.nu)
-- [SOGo GitHub Organization](https://github.com/inverse-inc)
+- [SOGo GitHub Organization](https://github.com/Alinto)
 - [SOGo Mailing List](https://lists.sogo.nu)
 
 ## Community
